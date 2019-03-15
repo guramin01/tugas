@@ -12,4 +12,13 @@ class Overviews extends CI_Controller
 	{
 		$this->load->view('admin/overviews');
 	}
+	public function test()
+	{
+		$this->load->view('admin/_componen/head');
+		$this->load->view('admin/_componen/sidebar');
+		$this->load->view('admin/_content/dashboard2');
+		$this->load->view('admin/_componen/footer');
+		$this->load->view('admin/_componen/js');
+
+	}
 }

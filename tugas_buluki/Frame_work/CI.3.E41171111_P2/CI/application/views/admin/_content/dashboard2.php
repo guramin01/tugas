@@ -3,7 +3,6 @@
 
 <head>
 
-  <?php $this->load->view('admin/_partial/head.php'); ?>
 
 </head>
 
@@ -11,7 +10,6 @@
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-<?php $this->load->view('admin/_partial/navbar.php'); ?>
 
   </nav>
 
@@ -20,7 +18,6 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
 
-  <?php $this->load->view('admin/_partial/sidebar.php'); ?>
 
     </ul>
 
@@ -30,7 +27,6 @@
 
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
-<?php $this->load->view('admin/_partial/breadcrumb.php'); ?>
         </ol>
 
         <!-- Icon Cards-->
@@ -610,7 +606,6 @@
       <!-- Sticky Footer -->
       <footer class="sticky-footer">
 
-<?php $this->load->view('admin/_partial/footer.php'); ?>
 
       </footer>
 
@@ -644,7 +639,6 @@
     </div>
   </div>
 
-<?php $this->load->view('admin/_partial/js.php'); ?>
 
 </body>
 
