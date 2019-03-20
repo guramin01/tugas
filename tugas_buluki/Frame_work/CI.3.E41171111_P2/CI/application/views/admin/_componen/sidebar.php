@@ -1,3 +1,10 @@
+   
+  <div id="wrapper">
+
+ <ul class="sidebar navbar-nav">
+
+
+    
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -30,3 +37,4 @@
           <i class="fas fa-fw fa-table"></i>
           <span>Tables</span></a>
       </li>
+    </ul>
