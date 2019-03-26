@@ -13,6 +13,7 @@ class Overviews extends CI_Controller
 		$this->load->view('admin/_componen/head');
 		$this->load->view('admin/_componen/navbar');
 		$this->load->view('admin/_componen/sidebar');
+		$this->load->view('admin/_componen/breadcrumb');
 		$this->load->view('admin/_content/overviews');
 		$this->load->view('admin/_componen/footer');
 		$this->load->view('admin/_componen/js');
