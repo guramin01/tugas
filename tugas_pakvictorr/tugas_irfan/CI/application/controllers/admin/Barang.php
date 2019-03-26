@@ -10,13 +10,21 @@ class Barang extends CI_Controller
 
 		//fungsi untuk pemanggilan model
 
-		$this->load->model("Barang_model");
+		$this->load->model('barang_model');
 
 	}
 
 	public function index()
 	{
-		$this->load->view('admin/_content/overviews');
+		$data['barang']=$this->barang_model->getAll();
+		// $data["xx"] = array("a", "sdfdaf");
+		$this->load->view('admin/_componen/head');
+		$this->load->view('admin/_componen/navbar');
+		$this->load->view('admin/_componen/sidebar');
+		// $this->load->view('admin/barang/daftar_barang');
+		$this->load->view('admin/_componen/footer');
+		$this->load->view('admin/_componen/js');
+		$this->load->view("admin/barang/daftar_barang", $data);
 	}
 
 	//fungsi untuk insert data
@@ -32,13 +40,6 @@ class Barang extends CI_Controller
 
 	}
 
-	public function delete(){
-
-	}
-
-	public function add_img(){
-		
-	}
 
 	
 }

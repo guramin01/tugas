@@ -24,7 +24,7 @@
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Other Pages:</h6>
           <a class="dropdown-item" href="404.html">Supplier</a>
-          <a class="dropdown-item" href="blank.html">Barang</a>
+          <a class="dropdown-item" href="<?= base_url('index.php/admin/barang') ?>">Barang</a>
           <a class="dropdown-item" href="blank.html">Karyawan</a>
           <a class="dropdown-item" href="blank.html">User</a>
         </div>

@@ -36,7 +36,8 @@ class Barang_model extends CI_Model{
 	}
 
 	//mengambil  semua data dari database
-	public function getAll(){
+	public function getAll()
+	{
 		return $this->db->get($this->_table)->result();
 	}
 	//mengambill data dari data base perbaris
@@ -63,8 +64,7 @@ class Barang_model extends CI_Model{
 		$this->stok_barang = $post["stok_barang"];
 		$this->db->update($this->_table, $this, array('kode_barang' => $post['id']));
 	}
-	public function insert(
-	)
+
 
 }
 

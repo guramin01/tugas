@@ -13,6 +13,7 @@ class Overviews extends CI_Controller
 		$this->load->view('admin/_componen/head');
 		$this->load->view('admin/_componen/navbar');
 		$this->load->view('admin/_componen/sidebar');
+		$this->load->view('admin/_componen/breadcrumb');
 		$this->load->view('admin/_content/overviews');
 		$this->load->view('admin/_componen/footer');
 		$this->load->view('admin/_componen/js');
@@ -26,13 +27,26 @@ class Overviews extends CI_Controller
 		$this->load->view('admin/_componen/js');
 
 	}
-		public function tambah()
+		public function tambahbarang()
 	{
 		$this->load->view('admin/_componen/head');
-		$this->load->view('admin/_content/dashboard2');
-		$this->load->view('admin/_componen/tambah.php');
+		$this->load->view('admin/_componen/navbar');
+		$this->load->view('admin/_componen/sidebar');
+		$this->load->view('admin/barang/tambah_barang');
 		$this->load->view('admin/_componen/footer');
 		$this->load->view('admin/_componen/js');
 
 	}
+		public function daftarbarang()
+	{
+		$this->load->view('admin/_componen/head');
+		$this->load->view('admin/_componen/navbar');
+		$this->load->view('admin/_componen/sidebar');
+		$this->load->view('admin/barang/daftar_barang');
+		$this->load->view('admin/_componen/footer');
+		$this->load->view('admin/_componen/js');
+
+	}
+
+
 }
