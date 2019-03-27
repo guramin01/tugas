@@ -22,6 +22,8 @@
            -->          <h6 class="dropdown-header">Tugas Bu Luki 1-8</h6>
           <a class="dropdown-item" href="<?= base_url('index.php/admin/download') ?>">Download File CI</a>
           <a class="dropdown-item" href="<?= base_url('index.php/admin/form') ?>">Form Validation</a>
+                    <a class="dropdown-item" href="<?= base_url('index.php/admin/ngoding_sendiri') ?>">Library sendiri</a>
+
         </div>
       </li>
       <li class="nav-item">
