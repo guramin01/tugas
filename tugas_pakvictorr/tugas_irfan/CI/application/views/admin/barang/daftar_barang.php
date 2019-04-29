@@ -1,6 +1,8 @@
 
           <div id="content-wrapper">
 
+           <div id="content-wrapper">
+
       <div class="container-fluid">
         <ol class="breadcrumb">
         
@@ -17,7 +19,8 @@
             Data Daftar Barang</div>
           <div class="card-body">
      <div class="col-md-12 ">
-          <a class="btn btn-primary btn-block" href="<?= base_url('index.php/admin/Overviews/tambahbarang')  ?>"><i class="fa fa-plus"></i>Tambah Barang</a>
+          <a class="btn btn-primary btn-block" href="<?= base_url('index.php/admin/barang/form_tambah')  ?>"><i class="fa fa-plus"></i>Tambah Barang</a>
+
      </div>
      <br>
             <div class="table-responsive">
@@ -26,7 +29,7 @@
                   <tr>
                     <th>Kode Barang</th>
                     <th>Nama Barang</th>
-                    <th>Age</th>
+                    <th>Deskripsi Barang</th>
                     <th>Stok Barang</th>
                     <th>Harga</th>
                     <th>Setting</th>
@@ -37,6 +40,15 @@
                   <tr>
                     <td><?= $ambildata->kode_barang; ?></td>
                     <td><?= $ambildata->nama_barang; ?></td>
+                    <td><?= $ambildata->deskripsi_barang; ?>  </td>
+                    <td><?= $ambildata->stok_barang;  ?> </td>
+                    <td><?= $ambildata->harga_barang;  ?></td>
+                      <td> 
+                     <?php echo anchor('admin/barang/edit/'.$ambildata->kode_barang,'Edit'); ?> |
+
+                      <a href="<?= site_url('admin/barang/hapus/'.$ambildata->kode_barang) ?>" onclick="return confirm('yakin akan menghapus data ini?')" title="Hapus">Hapus</a>
+                      </td>
+
                   </tr>
                       <?php endforeach; ?>
 

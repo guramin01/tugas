@@ -20,7 +20,7 @@ class Crud extends CI_Controller{
 	}
 
 	function tambah(){
-				$this->load->view('admin/_componen/head');
+		$this->load->view('admin/_componen/head');
 		$this->load->view('admin/_componen/navbar');
 		$this->load->view('admin/_componen/sidebar');
 		$this->load->view('admin/_componen/breadcrumb');

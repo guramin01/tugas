@@ -27,26 +27,35 @@ class Overviews extends CI_Controller
 		$this->load->view('admin/_componen/js');
 
 	}
-		public function tambahbarang()
-	{
-		$this->load->view('admin/_componen/head');
-		$this->load->view('admin/_componen/navbar');
-		$this->load->view('admin/_componen/sidebar');
-		$this->load->view('admin/barang/tambah_barang');
-		$this->load->view('admin/_componen/footer');
-		$this->load->view('admin/_componen/js');
+	// 	public function tambahbarang()
+	// {
+	// 	$this->load->view('admin/_componen/head');
+	// 	$this->load->view('admin/_componen/navbar');
+	// 	$this->load->view('admin/_componen/sidebar');
+	// 	$this->load->view('admin/barang/tambah_barang');
+	// 	$this->load->view('admin/_componen/footer');
+	// 	$this->load->view('admin/_componen/js');
 
-	}
-		public function daftarbarang()
-	{
-		$this->load->view('admin/_componen/head');
-		$this->load->view('admin/_componen/navbar');
-		$this->load->view('admin/_componen/sidebar');
-		$this->load->view('admin/barang/daftar_barang');
-		$this->load->view('admin/_componen/footer');
-		$this->load->view('admin/_componen/js');
+	// }
+	// 	public function daftarbarang()
+	// {
+	// 	$this->load->view('admin/_componen/head');
+	// 	$this->load->view('admin/_componen/navbar');
+	// 	$this->load->view('admin/_componen/sidebar');
+	// 	$this->load->view('admin/barang/daftar_barang');
+	// 	$this->load->view('admin/_componen/footer');
+	// 	$this->load->view('admin/_componen/js');
 
-	}
+	// }
+	// 	public function editbarang()
+	// {
+	// 	$this->load->view('admin/_componen/head');
+	// 	$this->load->view('admin/_componen/navbar');
+	// 	$this->load->view('admin/_componen/sidebar');
+	// 	$this->load->view('admin/barang/edit_barang');
+	// 	$this->load->view('admin/_componen/footer');
+	// 	$this->load->view('admin/_componen/js');
 
+	// }
 
 }

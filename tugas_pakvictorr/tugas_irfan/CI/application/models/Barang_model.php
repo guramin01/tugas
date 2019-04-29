@@ -45,24 +45,27 @@ class Barang_model extends CI_Model{
 		return $this->db->get_where($this->_table, ["kode_barang" => $id])->row();
 	}
 	// adalah insert data ke database
-	public function save(){
+	public function input_data(){
 		$post = $this->input->post();
 		$this->kode_barang = uniqid();
-		$this->nama_barang = $post["nama_barang"];
-		$this->deskripsi_barang = $post["deskripsi_barang"];
+		$this->nama_barang = htmlspecialchars($post["nama_barang"]);
+		$this->deskripsi_barang = htmlspecialchars($post["deskripsi_barang"]);
 		$this->harga_barang = $post["harga_barang"];
 		$this->stok_barang = $post["stok_barang"];
 		$this->db->insert($this->_table, $this);
 
 	}
-	public function update(){
+	public function edit(){
 		$post = $this->input->post();
-		$this->kode_barang = $post["id"];
-		$this->nama_barang = $post["nama_barang"];
-		$this->deskripsi_barang = $post["deskripsi_barang"];
+		$this->kode_barang = $post["kode_barang"];
+		$this->nama_barang = htmlspecialchars($post["nama_barang"]);
+		$this->deskripsi_barang = htmlspecialchars($post["deskripsi_barang"]);
 		$this->harga_barang = $post["harga_barang"];
 		$this->stok_barang = $post["stok_barang"];
-		$this->db->update($this->_table, $this, array('kode_barang' => $post['id']));
+		$this->db->update($this->_table, $this, array('kode_barang' => $post['kode_barang']));
+	}
+	public function delete($id){
+			return $this->db->delete($this->_table, array("kode_barang" => $id));
 	}
 
 
